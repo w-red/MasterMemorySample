@@ -1,4 +1,11 @@
 ﻿using Microsoft.Extensions.Logging;
+using MasterMemory;
+
+// MasterMemoryの設定
+[assembly: MasterMemoryGeneratorOptions(
+    Namespace = "MasterMemorySample.Entities.RecvData",
+    IsReturnNullIfKeyNotFound = true,
+    PrefixClassName = "")]
 
 namespace MasterMemorySample
 {
